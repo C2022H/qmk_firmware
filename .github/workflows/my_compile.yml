@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: pip3 install -r requirements.txt
     - name: Build Sonix keyboards
-      run:  make sharkoon/sgk3:default
+      run:  make sharkoon/sgk3:iso
       # python3 lib/python/build_all.py 
     - name: Declare some variables
       id: vars
