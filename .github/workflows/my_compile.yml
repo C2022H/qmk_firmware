@@ -1,4 +1,4 @@
-name: Compile Firmware
+name: My Compile Firmware
 
 on:
   workflow_dispatch:
