@@ -1,4 +1,5 @@
 # project specific files
+SRC = ../../../drivers/led/sn32/matrix_sn32f24xx.c
 SRC += rand.c
 
 # MCU name
@@ -16,9 +17,8 @@ DIP_SWITCH_ENABLE = yes
 
 # Custom Key and LED matrix handling
 CUSTOM_MATRIX = yes
-RGB_MATRIX_ENABLE = yes
-RGB_MATRIX_DRIVER = SN32F26x
-RGB_MATRIX_CUSTOM_KB = yes
+LED_MATRIX_ENABLE = yes
+LED_MATRIX_DRIVER = SN32F26x
 
 # Reduce code size
 USE_PROCESS_STACKSIZE = 0x1E0

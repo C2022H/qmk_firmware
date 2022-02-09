@@ -18,6 +18,3 @@ OPT_DEFS += -DCH_CFG_NO_IDLE_THREAD=TRUE
 
 # Include the patched functions
 SRC += keymaps/via/no_idle_thread.c
-
-# Reduce stack size even further since we literaly need those 10 bytes
-USE_EXCEPTIONS_STACKSIZE = 0xE0

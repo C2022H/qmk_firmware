@@ -43,6 +43,11 @@
 #define SN32_HAS_CT16B0 TRUE
 #define SN32_HAS_CT16B1 TRUE
 /*
+ * PWM driver system settings.
+ */
+#define SN32_PWM_USE_CT16B1 TRUE
+#define SN32_PWM_NO_RESET TRUE
+/*
  * SN driver system settings.
  */
 #define SN32_HAS_GPIOA TRUE

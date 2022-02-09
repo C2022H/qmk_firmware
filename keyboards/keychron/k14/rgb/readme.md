@@ -1,6 +1,6 @@
 # Keychron K14 RGB
 
-K14 Gateron RGB
+K14 RGB
 
 Keyboard Maintainer: [Jpe230](https://github.com/Jpe230)
 Based on Redragon K566 by: [Adam Honse](https://github.com/CalcProgrammer1) and Kemove DK63 by: [Stephen Peery](https://github.com/smp4488)

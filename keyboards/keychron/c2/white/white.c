@@ -64,7 +64,7 @@ void suspend_power_down_kb(void) {
     mode_leds_update();
 
     // Suspend backlight
-    rgb_matrix_set_suspend_state(true);
+    led_matrix_set_suspend_state(true);
 
     suspend_power_down_user();
 }

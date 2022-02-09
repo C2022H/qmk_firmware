@@ -68,7 +68,7 @@ void suspend_power_down_kb(void) {
     mode_leds_update();
 
     // Suspend backlight
-    rgb_matrix_set_suspend_state(true);
+    led_matrix_set_suspend_state(true);
 
     suspend_power_down_user();
 }
@@ -82,14 +82,12 @@ void housekeeping_task_kb(void) {
     mode_leds_update();
 
     // Restore backlight
-    rgb_matrix_set_suspend_state(false);
+    led_matrix_set_suspend_state(false);
 
     housekeeping_task_user();
 }
 
-#ifdef RGB_MATRIX_ENABLE
-
-#include "rgb_matrix.h"
+#include "led_matrix.h"
 
 #define XX NO_LED
 
@@ -124,5 +122,3 @@ led_config_t g_led_config = { {
    B,    4, 4, 4, 4, 4, 4, 4, 4, 4, 4,    B,    4,
    B, B, B,          4,          B, B, B, B, 4, 4, 4
 } };
-
-#endif

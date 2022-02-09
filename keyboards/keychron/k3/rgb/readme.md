@@ -11,7 +11,7 @@ Hardware Supported: SN32F248BF
 
 Make example for this keyboard (after setting up your build environment):
 
-    make keychron/k3/rgb:ansi
-    make keychron/k3/rgb/optical_via:iso
+    make keychron/k3/rgb/ansi:ansi
+    make keychron/k3/rgb/optical_iso:via_iso
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).

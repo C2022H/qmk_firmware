@@ -18,14 +18,13 @@
 
 #pragma once
 
-#include "config_common.h"
-
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0x3434
-#define PRODUCT_ID      0xFE0E
-#define DEVICE_VER		0x0001
+// PRODUCT_ID is specified separately for ISO / ANSI models
 #define MANUFACTURER    Keychron
 #define PRODUCT         K8 RGB
+
+#include "config_common.h"
 
 /* key matrix size */
 #define MATRIX_ROWS 6
@@ -37,7 +36,7 @@
 #define MATRIX_ROW_PINS { C15, D11, D10, D9, D8, D7 }
 
 // Connects each switch in the dip switch to the GPIO pin of the MCU
-#define DIP_SWITCH_PINS { D5, D6 }
+#define DIP_SWITCH_PINS { D4, D5 }
 
 /* LED Status indicators */
 #define LED_CAPS_LOCK_PIN B12

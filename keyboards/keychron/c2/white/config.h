@@ -1,5 +1,6 @@
 /* Copyright 2020 Adam Honse <calcprogrammer1@gmail.com>
  * Copyright 2020 Dimitris Mantzouranis <d3xter93@gmail.com>
+ * Copyright 2022 Eduardo Fernandes
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -47,9 +48,29 @@
 #define LED_MATRIX_COL_PINS     MATRIX_COL_PINS
 #define DRIVER_LED_TOTAL        104
 
-/* Backlight configuration */
-#define RGB_MATRIX_VAL_STEP            32
-#define RGB_DISABLE_WHEN_USB_SUSPENDED true
+/* Dexter's PWM hack */
+#define ACTIVATE_PWM_CHAN_0 //A0
+#define ACTIVATE_PWM_CHAN_1 //A1
+#define ACTIVATE_PWM_CHAN_2 //A2
+#define ACTIVATE_PWM_CHAN_3 //A3
+#define ACTIVATE_PWM_CHAN_4 //A4
+#define ACTIVATE_PWM_CHAN_5 //A5
+#define ACTIVATE_PWM_CHAN_6 //A6
+#define ACTIVATE_PWM_CHAN_7 //A7
+#define ACTIVATE_PWM_CHAN_8 //A8
+#define ACTIVATE_PWM_CHAN_9 //A9
+#define ACTIVATE_PWM_CHAN_10 //A10
+#define ACTIVATE_PWM_CHAN_11 //A11
+#define ACTIVATE_PWM_CHAN_12 //A12
+#define ACTIVATE_PWM_CHAN_13 //A13
+#define ACTIVATE_PWM_CHAN_14 //A14
+#define ACTIVATE_PWM_CHAN_15 //A15
+#define ACTIVATE_PWM_CHAN_16 //D0
+#define ACTIVATE_PWM_CHAN_17 //D1
+#define ACTIVATE_PWM_CHAN_18 //D2
+#define ACTIVATE_PWM_CHAN_19 //D3
+#define ACTIVATE_PWM_CHAN_21 //D5
+#define ACTIVATE_PWM_CHAN_22 //D8
 
 /* Connects each switch in the dip switch to the GPIO pin of the MCU */
 #define DIP_SWITCH_PINS { B3 }
@@ -64,23 +85,23 @@
 #define LED_WIN_PIN         B4
 #define LED_PIN_ON_STATE    1
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT     4
-#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 1150
+/* Enable led matrix effects */
+#define ENABLE_LED_MATRIX_ALPHAS_MODS
+#define ENABLE_LED_MATRIX_BREATHING
+#define ENABLE_LED_MATRIX_BAND
+#define ENABLE_LED_MATRIX_BAND_PINWHEEL
+#define ENABLE_LED_MATRIX_BAND_SPIRAL
+#define ENABLE_LED_MATRIX_CYCLE_LEFT_RIGHT
+#define ENABLE_LED_MATRIX_CYCLE_UP_DOWN
+#define ENABLE_LED_MATRIX_CYCLE_OUT_IN
+#define ENABLE_LED_MATRIX_DUAL_BEACON
+#define ENABLE_LED_MATRIX_WAVE_LEFT_RIGHT
+#define ENABLE_LED_MATRIX_WAVE_UP_DOWN
 
-/* Disable the following animation because they are not interesting in monochrome */
-#define DISABLE_RGB_MATRIX_ALPHAS_MODS
-#define DISABLE_RGB_MATRIX_GRADIENT_UP_DOWN
-#define DISABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
-#define DISABLE_RGB_MATRIX_BAND_SAT
-#define DISABLE_RGB_MATRIX_BAND_PINWHEEL_SAT
-#define DISABLE_RGB_MATRIX_BAND_SPIRAL_SAT
-#define DISABLE_RGB_MATRIX_CYCLE_ALL
-#define DISABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
-#define DISABLE_RGB_MATRIX_DUAL_BEACON
-
-/* TODO: Disabled the following animation because they crash the keyboard. Probably due to a too small stack */
-#define DISABLE_RGB_MATRIX_RAINDROPS
-#define DISABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
+/* Make VIA build options */
+#define LAYER_STATE_8BIT
+#define DYNAMIC_KEYMAP_LAYER_COUNT 4
+#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 1200
 
 /* Enable NKRO by default */
 #define FORCE_NKRO
