@@ -3,8 +3,8 @@ name: My Compile Firmware
 on:
   workflow_dispatch:
     branches:
-    - sn32_master_openrgb
     - sn32_openrgb
+#    - sn32_master_openrgb
 
 jobs:
   Build:
