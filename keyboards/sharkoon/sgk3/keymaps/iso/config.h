@@ -35,6 +35,11 @@
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
 #define RGB_MATRIX_STARTUP_SPD 32
 
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR  // defaut startup mode (solid white)
+#define RGB_MATRIX_STARTUP_HUE 240 // Sets the default hue value, if none has been set
+#define RGB_MATRIX_STARTUP_SAT 0   // Sets the default saturation value, if none has been set
+#define RGB_MATRIX_STARTUP_VAL 255 // Sets the default brightness value, if none has been set
+
 /* Key matrix size */
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 21
